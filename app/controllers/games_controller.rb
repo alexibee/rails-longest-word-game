@@ -51,6 +51,5 @@ class GamesController < ApplicationController
     url = "https://wagon-dictionary.herokuapp.com/#{params[:word]}"
     doc = URI.open(url).read
     JSON.parse(doc)
-    raise
   end
 end
